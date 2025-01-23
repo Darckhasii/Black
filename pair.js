@@ -85,7 +85,7 @@ router.get("/", async (req, res) => {
             const mg = `🛑*Do not share this code to anyone*🛑`;
             const dt = await HasinduPairWeb.sendMessage(user_jid, {https://chat.whatsapp.com/EnIYujBFHzGG9SqaQvDtWk
               image: {
-                url: "",
+                url: "https://github.com/Darckhasii/whallpepar/blob/main/WhatsApp%20Image%202025-01-23%20at%2019.52.37_bc1acb98.jpg",
               },
               caption: sid,
             });
