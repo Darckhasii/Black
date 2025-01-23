@@ -81,18 +81,18 @@ router.get("/", async (req, res) => {
               ""
             );
 
-            const sid = `*Hasindu MD🥷 [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/WKGLBR2PCETWD1*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/GAOhr0qNK7KEvJwbenGivZ*`;
-            const mg = `🛑 *Do not share this code to anyone* 🛑`;
-            const dt = await HasinduPairWeb.sendMessage(user_jid, {
+            const sid = `*Hasindu MD🥷 [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/0729356513*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/EnIYujBFHzGG9SqaQvDtWk*`;
+            const mg = `🛑*Do not share this code to anyone*🛑`;
+            const dt = await HasinduPairWeb.sendMessage(user_jid, {https://chat.whatsapp.com/EnIYujBFHzGG9SqaQvDtWk
               image: {
-                url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20WP.jpg",
+                url: "",
               },
               caption: sid,
             });
-            const msg = await RobinPairWeb.sendMessage(user_jid, {
+            const msg = await HasinduPairWeb.sendMessage(user_jid, {
               text: string_session,
             });
-            const msg1 = await RobinPairWeb.sendMessage(user_jid, { text: mg });
+            const msg1 = await HasinduPairWeb.sendMessage(user_jid, { text: mg });
           } catch (e) {
             exec("pm2 restart prabath");
           }
@@ -111,7 +111,7 @@ router.get("/", async (req, res) => {
         }
       });
     } catch (err) {
-      exec("pm2 restart Robin-md");
+      exec("pm2 restart Hasindu-md");
       console.log("service restarted");
       RobinPair();
       await removeFile("./session");
